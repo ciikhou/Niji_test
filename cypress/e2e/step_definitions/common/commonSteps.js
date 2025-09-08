@@ -6,7 +6,7 @@ const myHomePage = new homepage()
 Given("I go to Lacoste Homepage", function () {
     cy.visit("www.niji.fr")
     cy.window().then((win) => {
-        win.eval('window.location.replace("http:www.lacoste.com");');
+        win.eval('window.location.replace("http:www.lacoste.fr");');
     });
 
     myHomePage.directAccess()
