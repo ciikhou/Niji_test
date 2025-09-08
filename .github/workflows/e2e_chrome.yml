@@ -22,6 +22,14 @@ jobs:
 
         - name: Init preprocessor
           run : npm install --save-dev @bahmutov/cypress-esbuild-preprocessor @badeball/cypress-cucumber-preprocessor
-
-        - name: Execution
-          run: npx cypress run --browser chrome
+        - name: Upload build
+          uses: actions/upload-artifact@v3
+          with:
+            name: build
+            path: build/
+  tests:
+    needs: build  
+    runs-on: ubuntu-latest
+    steps:
+    - name: Execution
+      run: npx cypress run --browser chrome
