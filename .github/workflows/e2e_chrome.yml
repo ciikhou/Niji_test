@@ -1,9 +1,16 @@
-stages:
-  - test
+name: E2E All tests Chrome
 
-test:
-  image: node:latest
-  job: test
+# Déclencheurs
+on:
+  workflow_dispatch:  # Permet de lancer manuellement le workflow
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
   script:
     - npm ci
     - npm start &
