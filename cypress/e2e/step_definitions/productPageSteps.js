@@ -1,7 +1,7 @@
 import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import ProductPage from "../pageObject/ProductPage";
 import rgbHex from 'rgb-hex';
-import MainMenuNavbar from "../pageObject/common/mainMenuNavbar";
+import MainMenuNavbar from "../pageObject/common/MainMenuNavbar";
 
 const myProductPage = new ProductPage()
 const mainMenu = new MainMenuNavbar()

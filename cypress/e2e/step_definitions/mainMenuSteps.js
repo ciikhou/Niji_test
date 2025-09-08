@@ -1,5 +1,5 @@
 import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import MainMenuNavbar from "../pageObject/common/mainMenuNavbar";
+import MainMenuNavbar from "../pageObject/common/MainMenuNavbar";
 
 const mainMenu = new MainMenuNavbar()
 
