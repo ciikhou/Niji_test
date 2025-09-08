@@ -11,7 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  script:
-    - npm ci
-    - npm start &
-    - npx cypress run --browser chrome
+    
+    steps:
+        - name: Installation
+          run: npm install
+
+        - name: Execution
+          run: npx cypress run --browser chrome
