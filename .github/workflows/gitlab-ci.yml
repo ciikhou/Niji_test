@@ -1,0 +1,10 @@
+stages:
+  - test
+
+test:
+  image: node:latest
+  stage: test
+  script:
+    - npm ci
+    - npm start &
+    - npx cypress run --browser chrome
