@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+         
+        - name: Init code
+          uses: actions/checkout@v3
+
         - name: Installation
           run: npm install
 
