@@ -13,12 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-         
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+           node-version: '18'
+
         - name: Init code
           uses: actions/checkout@v3
 
         - name: Installation
-          run: npm install
+          run: npm ci
 
         - name: Execution
           run: npx cypress run --browser chrome
