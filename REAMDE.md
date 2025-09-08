@@ -8,6 +8,7 @@
 ## Run tests
 
 Ce projet ne contient que deux feature pour le moment
+J'ai utilisé le preprocessor "cypress-cucumber-preprocessor" afin de pouvoir écrire les tests en Gherkin pour une meilleure visibilité et maintence des tests.
 
 Pour lancer les tests via l'interface graphique il suffit d'éxecuter la commande suivante
 - `npx cypress open` 
