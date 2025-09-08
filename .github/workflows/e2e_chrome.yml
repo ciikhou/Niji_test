@@ -20,5 +20,8 @@ jobs:
         - name: Installation
           run: npm ci
 
+        - name: Init preprocessor
+          run : npm install --save-dev @bahmutov/cypress-esbuild-preprocessor
+
         - name: Execution
-          run: npx cypress run --browser chrome
+          run : npm install --save-dev @bahmutov/cypress-esbuild-preprocessor
