@@ -12,7 +12,7 @@ Scenario Outline: Homepage opens correctly : <expectedTitle>
     And I choose to stay on yhe current website despite my current location
 
   Examples: 
-    |       mySearch     |                    expectedTitle                               |         expectedURL             |
-    |    "Lacoste US"    |        "Polos, Clothing & Apparel Online \| LACOSTE"           |  "https://www.lacoste.com/us/"  | 
-    |    "Lacoste FR"    |        "Polos, chaussures et maroquinerie - Lacoste France"    |  "https://www.lacoste.com/fr/"  |
-    |    "Lacoste China" |        "LACOSTE中国官方网站"                                    |  "https://lacoste.com.cn/"      |
+    |       mySearch     |                    expectedTitle                                 |         expectedURL                     |
+    |    "Lacoste US"    |        "Polos, Clothing & Apparel Online \| LACOSTE"             |  "https://www.lacoste.com/us/"          | 
+    |    "Lacoste FR"    |        "Polos, chaussures et maroquinerie - Lacoste France"      |  "https://www.lacoste.com/fr/"          |
+    |   "Lacoste Italia" |        "Polo, Scarpe, Pelletteria \| Scoprili su Lacoste Italia" |  "https://www.lacoste.com/it/" |

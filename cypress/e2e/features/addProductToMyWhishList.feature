@@ -1,7 +1,7 @@
 Feature: Add product to my whishllist 
     Scenario: Add product to my whishlist (Not logged in)
     Given I go to Lacoste Homepage
-    When I search the product "Sac" via the searchBar
+    When I search the product "Polo L" via the searchBar
     And I wait until my results appear and I click on it
     And I add this product to my whishlist
     Then I see a success notification
