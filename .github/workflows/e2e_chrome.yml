@@ -28,3 +28,6 @@ jobs:
           with:
             name: build
             path: build/
+
+        - name: Execution
+          run: npx cypress run --browser chrome
