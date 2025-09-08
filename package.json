@@ -1,0 +1,1 @@
+{"cypress-cucumber-preprocessor":{"nonGlobalStepDefinitions":false,"stepDefinitions":"cypress/e2e/step_definitions/**/*.{js,ts}"},"devDependencies":{"cypress-xpath":"^2.0.1"},"dependencies":{"cypress":"^15.1.0","cypress-plugin-xhr-toggle":"^1.2.1","rgb-hex":"^4.1.0"},"scripts":{"e2e:chrome":"cypress run --browser chrome"}}
